@@ -1,0 +1,9 @@
+<div [ngClass]="setClasses()">
+    <p>
+        <input (change)="onTodoToggle(todoSingle)" type="checkbox" />
+        {{ todoSingle.title }}
+         <button (click)="onTodoDelete(todoSingle)" class="del">
+             <fa-icon [icon]="faTimes"></fa-icon>
+         </button>
+    </p>
+</div>

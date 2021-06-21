@@ -1,0 +1,6 @@
+<form class="form" (ngSubmit)="onAddTodoSubmit()" *ngIf="showAddTask">
+    <input type="text" name="title" [(ngModel)]="title" placeholder="Add Todo...">
+    <!-- {{ title }} -->
+    <input type="submit" value="Submit" class="btn">
+    <!-- <app-button color="green" text="Add" (btnClick)="addTodoClicked()"></app-button> -->
+</form>

@@ -1,0 +1,16 @@
+<div>
+    <!-- <ul *ngFor="let todoSingle of todoItems">
+        <li>
+            {{ todoSingle.title }}
+        </li>
+    </ul> -->
+
+    <app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+
+    <app-todo-item 
+        *ngFor="let todoSingle of todoItems" 
+        [todoSingle]="todoSingle"
+        (deleteTodo)="deleteTodo($event)"
+    >
+    </app-todo-item>
+</div>
